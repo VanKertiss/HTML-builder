@@ -13,7 +13,7 @@ const write = (text) => {
   fs.appendFile('./02-write-file/data.txt', text, function (error) {
     if (error) throw error; // если возникла ошибка
     if (text === 'exit') {
-      console.log(text);
+      console.log('Всем спасибо, все свободны...');
       return readline.close();
     }
     startWriteFile();
