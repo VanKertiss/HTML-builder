@@ -11,7 +11,6 @@ fs.readdir(dir, { withFileTypes: true}, (err, files) => {
   if (err) {
     console.log(err);
   }
-  console.log(files);
 
   for (let i = 0; i < files.length; i++) {
     const file = `${files[i].name}`;
