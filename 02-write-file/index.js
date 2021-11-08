@@ -10,6 +10,7 @@ let writableStream = fs.createWriteStream(
 );
 
 const write = (text) => {
+
   fs.appendFile('./02-write-file/data.txt', text, function (error) {
     if (error) throw error; // если возникла ошибка
     if (text === 'exit') {
